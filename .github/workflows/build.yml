@@ -22,7 +22,7 @@ jobs:
       - name: Prepare bundled handwriting model
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install --quiet "torch>=2.9,<2.12" numpy
+          python3 -m pip install --quiet "torch>=2.9,<2.12" numpy "onnx>=1.17,<2"
           python3 tools/export_mishkefet.py
       - name: Build debug APK
         run: gradle assembleDebug --stacktrace
