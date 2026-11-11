@@ -1,16 +1,5 @@
-# Offline Handwriting Android
+# המחשבון של אמא
 
-100% offline architecture: no INTERNET permission, no cloud API, no account, no remote inference.
+מחשבון Android פשוט בעברית, עם פעולות חשבון, אחוזים, מחיקה ואייקון מחשבון ולב טורקיז. עובד ללא אינטרנט.
 
-The recognition engine is being integrated as bundled on-device models. The UI already provides a local handwriting canvas and Hebrew/English mode selection.
-
-## Security invariant
-The Android manifest intentionally contains no INTERNET permission. Recognition must remain on-device.
-
-## Build
-`gradle assembleDebug`
-
-## Planned bundled engines
-- Hebrew handwriting: Mishkefet-v1 (local model; model license must be respected).
-- English handwriting: local CTC/ONNX handwriting model.
-- Local segmentation, spacing, punctuation and contextual correction.
+Build: `gradle assembleDebug`. GitHub Actions builds on branch `simple-calculator-app`.
